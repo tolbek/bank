@@ -73,18 +73,27 @@ int donationProcess() {
     cout<<"donations are appreciated"<<"\n";
     int donationAmount;
     cin>>donationAmount;
-    // return to menu options display
 }
 
 void closeProgram() {
     cout<<"Thank you for using our services"<<"\n";
     cout<<"You can reach us at "<< contactNumber<<"\n";
-    // show blank screen
 }
 
 
 
 int main() {
-    // std::cout << "Welcome to our bank, choose an option" << std::endl;
-    return 0;
+  welcomeMessage();
+  menuOptionsDisplay();
+  getChoice();
+
+  createUser();
+
+  displayFunds();
+  safeKeeping();
+  donationProcess();
+
+  closeProgram();
+
+  return 0;
 }
