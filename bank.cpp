@@ -15,7 +15,15 @@ void welcomeMessage() {
 
 void menuOptionsDisplay() {
     cout<<"Enter a number corresponding to your preferred option"<<"\n";
-    cout<<"1) Receive Funds>"<<"\n"<<"2) Safe Keeping"<<"\n"<<"3) Donate"<<"\n";
+    // cout<<"1) Receive Funds>"<<"\n"<<"2) Safe Keeping"<<"\n"<<"3) Donate"<<"\n";
+
+    int menuChoiceArray[3] = {1,2,3};
+    string chooseFromMenuOptions[3] = {"Receive Funds", "Safe Keeping", "Donation"};
+
+    for(int ch = 0; ch <= 2; ch++){
+        if(menuChoiceArray[ch] == 0){
+             cout<<chooseFromMenuOptions[ch]<<"\n";
+        }
 }
 
 int getChoice() {
